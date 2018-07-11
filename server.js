@@ -1,4 +1,4 @@
-var http = require('http');
+/*var http = require('http');
 var fs = require('fs');
   var server = http.createServer(function(req, res){
     res.statusCode = 200;
@@ -10,6 +10,22 @@ var fs = require('fs');
     res.end(data);
     });
   });
-  server.listen(process.env.PORT, process.env.IP, function(){
+  server.listen(process.env.PORT, process.env.IP , function(){
+    console.log('Server running');
+  });
+*/
+var http = require('http');
+var express = require('express');
+var app = express();
+var server = http.Server(app);
+
+app.get('/', function(req, res){
+  res.sendFile(__dirname+'/index.html');
+})
+app.get('/about', function(req, res){
+  res.sendFile(__dirname+'/about.html');
+});
+    
+  server.listen(process.env.PORT, process.env.IP , function(){
     console.log('Server running');
   });

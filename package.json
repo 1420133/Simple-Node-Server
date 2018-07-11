@@ -1,0 +1,26 @@
+{
+  "name": "simple-node-server",
+  "version": "1.0.0",
+  "description": "simple node server",
+  "main": "server.js",
+  "scripts": {
+    "test": "Me",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1420133/Simple-Node-Server.git"
+  },
+  "keywords": [
+    "Me"
+  ],
+  "author": "Me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1420133/Simple-Node-Server/issues"
+  },
+  "homepage": "https://github.com/1420133/Simple-Node-Server#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.0"
+  }
+}
